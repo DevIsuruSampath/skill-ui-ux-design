@@ -1,10 +1,10 @@
-# UI/UX Design Skill
+# UI/UX Design Plugin
 
-A plugin that provides modern UI/UX design principles, patterns, and best practices for web and mobile applications.
+A Claude Code plugin that provides modern UI/UX design principles, patterns, and best practices for web and mobile applications.
 
 ## When to Use
 
-Activate this skill when:
+Activate this plugin when:
 
 - Building or designing web/mobile interfaces
 - Choosing colors, typography, or layout systems
@@ -26,19 +26,17 @@ Activate this skill when:
 
 ## Installation
 
-### Option 1: Install as a Claude Code Skill (Recommended)
+### Option 1: Install as a Local Plugin (Recommended)
 
-Clone this repo into your local skills directory:
+Clone this repo into the local plugins directory:
 
 ```bash
-# Create skills directory if it doesn't exist
-mkdir -p ~/.claude/skills
-
-# Clone the skill
-git clone https://github.com/DevIsuruSampath/skill-ui-ux-design.git ~/.claude/skills/ui-ux-design
+# Clone into Claude Code plugins local directory
+git clone https://github.com/DevIsuruSampath/skill-ui-ux-design.git \
+  ~/.claude/plugins/local/plugins/ui-ux-design
 ```
 
-Restart Claude Code. The skill will be automatically available when you ask about UI/UX topics.
+Restart Claude Code. The plugin will be automatically detected and available.
 
 ### Option 2: Install via CLAUDE.md
 
@@ -49,23 +47,26 @@ Add a reference in your project's `CLAUDE.md`:
 git clone https://github.com/DevIsuruSampath/skill-ui-ux-design.git
 
 # Add to CLAUDE.md
-echo "- Read @skill-ui-ux-design/SKILL.md when doing UI/UX work" >> CLAUDE.md
+echo "- Read @skill-ui-ux-design/skills/ui-ux-design/SKILL.md when doing UI/UX work" >> CLAUDE.md
 ```
 
 ### Option 3: Manual Install
 
-Copy the files into your project and reference `SKILL.md` in your `CLAUDE.md` or agent instructions.
+Copy the `skills/ui-ux-design/` directory into your project and reference `SKILL.md` in your `CLAUDE.md` or agent instructions.
 
 ## File Structure
 
 ```
-├── _meta.json                 # Skill metadata (slug, version, owner)
-├── SKILL.md                   # Skill entry point and quick reference
-├── UI_UX_MASTER_GUIDE.md      # Comprehensive design reference
-└── references/
-    ├── ACCESSIBILITY.md       # WCAG 2.2 compliance guide
-    ├── COMPONENTS.md          # Shadcn/ui + Tailwind component patterns
-    └── DESIGN_SYSTEM.md       # Full design system reference
+├── .claude-plugin/
+│   └── plugin.json            # Plugin manifest
+├── skills/ui-ux-design/
+│   ├── SKILL.md               # Skill entry point and quick reference
+│   ├── UI_UX_MASTER_GUIDE.md  # Comprehensive design reference
+│   └── references/
+│       ├── ACCESSIBILITY.md   # WCAG 2.2 compliance guide
+│       ├── COMPONENTS.md      # Shadcn/ui + Tailwind component patterns
+│       └── DESIGN_SYSTEM.md   # Full design system reference
+└── README.md
 ```
 
 ## Version

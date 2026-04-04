@@ -1,0 +1,8 @@
+{
+  "name": "ui-ux-design",
+  "description": "Modern UI/UX design principles, patterns, and best practices for web and mobile applications. Covers 2026 design trends, Tailwind CSS patterns, Shadcn/ui integration, micro-interactions, accessibility (WCAG 2.2), and mobile-first responsive design.",
+  "version": "1.0.0",
+  "author": {
+    "name": "indevs.in"
+  }
+}
