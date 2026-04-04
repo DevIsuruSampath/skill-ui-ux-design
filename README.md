@@ -24,6 +24,38 @@ Activate this skill when:
 - **Accessibility (WCAG 2.2)** - Contrast ratios, keyboard nav, ARIA labels
 - **2026 Design Trends** - Current patterns and inspiration sources
 
+## Installation
+
+### Option 1: Install as a Claude Code Skill (Recommended)
+
+Clone this repo into your local skills directory:
+
+```bash
+# Create skills directory if it doesn't exist
+mkdir -p ~/.claude/skills
+
+# Clone the skill
+git clone https://github.com/DevIsuruSampath/skill-ui-ux-design.git ~/.claude/skills/ui-ux-design
+```
+
+Restart Claude Code. The skill will be automatically available when you ask about UI/UX topics.
+
+### Option 2: Install via CLAUDE.md
+
+Add a reference in your project's `CLAUDE.md`:
+
+```bash
+# Clone to any location
+git clone https://github.com/DevIsuruSampath/skill-ui-ux-design.git
+
+# Add to CLAUDE.md
+echo "- Read @skill-ui-ux-design/SKILL.md when doing UI/UX work" >> CLAUDE.md
+```
+
+### Option 3: Manual Install
+
+Copy the files into your project and reference `SKILL.md` in your `CLAUDE.md` or agent instructions.
+
 ## File Structure
 
 ```
